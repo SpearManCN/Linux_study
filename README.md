@@ -105,3 +105,42 @@ ctrl + r = redo. 되돌린걸 취소
 :set nu = 행 번호 출력
 :set nonu = 행 번호 숨기기
 ```
+
+### 파일 시스템 관리
+ln = 링크 생성 (하드링크, 심볼릭 링크) 
+```bash
+ln file.txt linkName1
+위는 하드링크 아래는 심볼릭 링크
+ln -s file.txt linkName2
+```
+find = 파일, 디렉토리 찾기 * grep은 파일내에서 찾는것, find는 파일자체를 찾는
+```bash
+find Directory
+-> Directory라는 이름을 가진 폴더의 하위 내용들 가져옴
+find file.txt
+-> 현재 디렉토리에서 file.txt을 찾음
+find . -name "file.txt"
+-> 현재 dir 및 모든 하위에서 file.txt를 찾음
+find . -name "*nameAAA*"
+-> 현재 dir 및 모든 하위에서 이름에 nameAAA가 들어가는 파일 및 dir을 찾
+```
+df = 리눅스 시스템 전체의 (마운트 된) 디스크 사용량을 확인 <br/>
+du = 현재 Dir의 디스크 사용량 확인.<br/>
+둘다 df -h, du -h 식으로 -h를 붙이면 가시성 좋아짐<br/>
+
+### 압축
+tar = linux에서 쓰이는 압축 형태
+```bash
+tar -cvf aaa.tar abc
+abc폴더를 aaa.tar로 압축한다.
+tar -xvf aaa.tar
+aaa.tar를 압축해제한다.
+tar -zcvf aaa.tar.gz abc
+abc라는 폴더를 aaa.tar.gz로 압축한다.
+tar -zxvf aaa.tar.gz
+aaa.tar.gz를 압축해제한다.
+```
+
+
+
+
