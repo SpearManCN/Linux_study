@@ -10,25 +10,69 @@
 ### 기본 명령어
 ls: 디렉터리 내용 보기<br/>
 ```bash
+ls
+new_file3.txt
 ls -l
 -rwxrwxrwx 1 cn1056 cn1056 57 Apr  9 09:08 new_file3.txt
 ```
 이때의 첫 문자열은 맨 앞 d(디렉토리), -(일반파일), s(특수파일)<br/>
 이후 rwx 각 read, write, execute 그리고 소유주, 소유그룹, 그 외유저 순으로 3번 반복<br/>
 
-
-
 cd: 디렉터리 변경<br/>
 pwd: 현재 작업 중인 디렉터리 출력<br/>
 mkdir: 디렉터리 생성<br/>
 touch: 빈 파일 생성 또는 파일 수정 시간 업데이트<br/>
 cp: 파일 또는 디렉터리 복사<br/>
+```bash
+ls
+new_file.txt
+cp new_file.txt new_file2.txt
+ls
+new_file.txt new_file2.txt
+cp new_file.txt file/path
+```
+cp 파일명 파일명2 하면 해당 디렉토리에 파일이 복사됨.<br/>
+cp 파일명 위치 하면 해당 위치로 파일이 복사됨.<br/>
+
 mv: 파일 또는 디렉터리 이동 또는 이름 변경<br/>
+```bash
+ls
+new_file.txt
+cp new_file.txt new_file2.txt
+ls
+new_file.txt new_file2.txt
+cp new_file.txt file/path
+```
 rm: 파일 또는 디렉터리 삭제<br/>
 cat: 파일 내용 출력<br/>
 less 또는 more: 파일 내용 페이지별로 출력<br/>
 grep: 파일 내에서 패턴 검색<br/>
+```bash
+grep "이 파일은" new_file.txt
+이파일은 ubuntu로 만들어본 메모장입니다.
+```
+문자열 "이 파일은" 이 포함되어있다면 해당 부분이 빨간색으로 출력됨.<br/>
+
 chmod: 파일 권한 변경
+```bash
+ls -l
+-rwxrwxrwx 1 cn1056 cn1056 57 Apr  9 09:08 new_file.txt
+sudo chmod 700 new_file.txt
+ls -l
+-rwx------ 1 root root 57 Apr  9 09:08 new_file.txt
+```
+chmod 뒤에 8진수 3개로 표현할 수 있고 또는 알파벳으로 표현가능 <br/>
+r(4)w(2)x(1)의 각 값을 가짐<br/>
+
 chown: 파일 소유자 변경
+```bash
+ls -l
+-rwxrwxrwx 1 cn1056 cn1056 57 Apr  9 09:08 new_file.txt
+sudo chown root:root new_file.txt
+ls -l
+-rwxrwxrwx 1 root root 57 Apr  9 09:08 new_file.txt
+```
+소유주:소유주그룹 형식이다.<br/>
+
 sudo: 슈퍼 유저 권한으로 명령 실행
 
