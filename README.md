@@ -140,7 +140,17 @@ abc라는 폴더를 aaa.tar.gz로 압축한다.
 tar -zxvf aaa.tar.gz
 aaa.tar.gz를 압축해제한다.
 ```
-
+zip = 압축
+unzip = 압축해제
+```bash
+zip zipFile1.zip file1.txt file2.txt file3.txt
+파일 세개를 압축한다.
+zip -r zipFile2.zip directory
+-r 을 사용해야 재귀적으로 하위 폴더들 까지 포함하여 압축한다.
+unzip zipFile1.zip
+unzip -d directory zipFile2.zip
+각각 현재 위치, directory 위치에 압축해제
+```
 
 
 
