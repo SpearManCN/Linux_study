@@ -154,4 +154,23 @@ unzip -d directory zipFile2.zip
 ```
 ### 프로세스 관리
 
+ps = 현재 프로세스 확인 <br/>
+ps -e, ps -f = 모두보기, 좀더 자세히 보기 <br/>
+kill = 프로세스 종료
+```bash
+kill -15 pid
+kill -9 pid
+위는 정상종료, 아래는 강제종료
+```
+top = 시스템의 실시간 프로세스 및 시스템 리소스 사용률 확인 (ps는 그 순간, top은 실시간) <br/>
+htop = top의 향상된 텍스트기반 명령어 <br/>
+killall = 한번에 여러 프로세스를 종료
+```bash
+killall processName
+위는 processName이 들어간 모든 프로세스를 종료함
+killall -i processName
+같지만 종료전 물어봄
+
+```
+
 
