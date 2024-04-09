@@ -53,6 +53,7 @@ grep "이 파일은" new_file.txt
 ```
 문자열 "이 파일은" 이 포함되어있다면 해당 부분이 빨간색으로 출력됨.<br/>
 
+### 권한 관리
 chmod: 파일 권한 변경
 ```bash
 ls -l
@@ -151,6 +152,6 @@ unzip zipFile1.zip
 unzip -d directory zipFile2.zip
 각각 현재 위치, directory 위치에 압축해제
 ```
-
+### 프로세스 관리
 
 
