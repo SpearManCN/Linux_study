@@ -183,7 +183,12 @@ ping 8.8.8.8
 ip addr(ifconfig) = 네트워크 인터페이스의 설정을 확인하고 변경하는 명령어 <br/>
 netstat = 네트워크 연결 및 라우팅 테이블을 확인. 현재 시스템에서 열려 있는 포트, 연결된 주소 및 포트, 라우팅 정보 등을 확인 (net_tools를 다운받아야만 사용가능) <br/>
 traceroute = 목적지 호스트로 가는 경로를 추적하고 각 중간 라우터까지의 지연 시간을 확인하는 데 사용 (traceroute 다운 받아야 사용가능) <br/>
-
+ssh = 리눅스에서 사용하는 ssh 연결 명령어 (putty같은 기능, openssh-server를 설치해야함) <br/>
+wget, curl = url 에서 파일 다운로드
+```bash
+wget [옵션] [url]
+curl [옵션] [url]
+```
 
 
 
