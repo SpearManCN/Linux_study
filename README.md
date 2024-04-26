@@ -189,6 +189,30 @@ wget, curl = url 에서 파일 다운로드
 wget [옵션] [url]
 curl [옵션] [url]
 ```
+nslookup: 도메인 이름에 대한 DNS 조회를 수행 <br/>
+arp: ARP 캐시를 표시하거나 조작 <br/>
+tcpdump: 네트워크 트래픽을 캡처하고 분석 <br/>
+
+### 시스템 정보확인
+uname: 시스템의 커널 및 운영 체제 정보를 표시<br/>
+hostname: 시스템의 호스트 이름을 표시하거나 변경 <br/>
+free: 시스템의 메모리 사용량을 표시 <br/>
+uptime: 시스템의 부팅 시간 및 부하 정보를 표시 <br/>
+lscpu: 시스템의 CPU 정보를 표시 <br/>
+
+### 패키지 관리
+apt: Debian 및 Ubuntu 기반 시스템에서 사용되는 패키지 관리자
+```bash
+sudo apt update
+sudo apt install package_name
+sudo apt remove package_name
+```
+yum: Red Hat 계열 및 CentOS 기반 시스템에서 사용되는 패키지 관리자
+```bash
+sudo yum update
+sudo yum install package_name
+sudo yum remove package_name
+```
 
 
 
