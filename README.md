@@ -213,9 +213,20 @@ sudo yum update
 sudo yum install package_name
 sudo yum remove package_name
 ```
+snap: 여러 리눅스 배포판에서 사용할 수 있는 통합적인 패키지 관리 시스템
+```bash
+snap find package_name
+ㄴ 패지키 검색
+sudo snap install package_name
+ㄴ 패키지 설치
+sudo snap remove package_name
+ㄴ 패키지 삭제
+```
+pip: Python 패키지 관리자 <br/>
+npm: Node.js 패키지 관리자 <br/>
 
 
 
 
 
-
+ㄱ
