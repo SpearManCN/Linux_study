@@ -225,8 +225,3 @@ sudo snap remove package_name
 pip: Python 패키지 관리자 <br/>
 npm: Node.js 패키지 관리자 <br/>
 
-
-
-
-
-ㄱ
